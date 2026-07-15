@@ -180,16 +180,16 @@ export const skillGroups = [
     title: "Scientific data and simulation",
     items: [
       "Python, NumPy, and pandas",
-      "ROOT, uproot, and Awkward Array",
-      "Pythia8 and HepMC event simulation",
+      "ROOT and uproot data processing",
+      "HepMC event-record analysis",
       "Simulation-based and observational datasets"
     ]
   },
   {
     title: "Machine learning and validation",
     items: [
-      "Scikit-learn and XGBoost",
-      "Neural-network training and evaluation",
+      "Scikit-learn, PyTorch, XGBoost and Neural Network",
+      "Classification and surrogate modelling",
       "Probability calibration and weighted metrics",
       "Model comparison and applicability analysis"
     ]
@@ -197,8 +197,8 @@ export const skillGroups = [
   {
     title: "Scientific modelling and inference",
     items: [
-      "Numerical and thermal modelling",
-      "Statistical hypothesis comparison",
+      "Numerical and one-dimensional thermal modelling",
+      "Statistical comparison of physical hypotheses",
       "Cosmological parameter estimation",
       "Particle-physics reinterpretation workflows"
     ]
@@ -206,10 +206,10 @@ export const skillGroups = [
   {
     title: "Research software and delivery",
     items: [
-      "Linux, Git, and GitHub",
-      "Modular Python analysis pipelines",
-      "Data visualisation and automated reporting",
-      "Docker and workflow automation"
+      "Linux, Git, GitHub, and VS Code",
+      "Modular and reproducible Python pipelines",
+      "Scientific data visualisation",
+      "Docker, n8n and workflow automation"
     ]
   }
 ];
