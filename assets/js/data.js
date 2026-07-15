@@ -152,7 +152,7 @@ export const writing = [
     links: [
       {
         label: "Original ATLAS paper",
-        href: "assets/docs/MSVertex.pdf.pdf",
+        href: "assets/docs/MSVertex.pdf",
       },
       {
         label: "Official erratum",
