@@ -92,11 +92,11 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Surrogate Model for long-lived particle reinterpretation",
-    area: "Particle physics / long-lived particles",
-    problem: "Reinterpret long-lived particle search information using simulation outputs and statistical analysis workflows.",
-    method: "Surrogate Model, analysis assumptions, and computational scripts into a reproducible reinterpretation workflow.",
-    results: "Demonstrates preparation for collider-physics analysis where modelling choices, uncertainty handling, and reproducibility are central.",
+    title: "Machine-learning surrogate models for ATLAS long-lived-particle reinterpretation",
+    area: "Particle physics / machine learning / long-lived particles",
+    problem:"Reproduce the exclusion limits of the ATLAS MSVertex search directly from generator-level observables, without requiring full detector simulation or event reconstruction.",
+    method:"Developed and benchmarked surrogate classifiers to predict event-level ABCD-region probabilities from LLP kinematics and decay geometry. Reconstructed signal yields and exclusion limits, then validated the complete pipeline using independent MadGraph5 and Pythia8 event samples.",
+    results:"Selected a compact 1.44 MB XGBoost model achieving a 0.01% global reconstruction error in the signal regions on the test sample. The framework reproduced the main ATLAS exclusion-limit behaviour across several LLP benchmarks and quantified its interpolation and extrapolation limits for unseen masses and signal topologies.",
     artifacts: "Research artifact structured for repository or manuscript/report attachment when approved for public release.",
     status: "Research project",
     technologies: ["Python", "Particle Physics", "Machine Learning", "Scientific Computing"],
@@ -109,7 +109,7 @@ export const projects = [
     problem: "Adapt an open-source agentic AI framework into a local assistant for scientific coding, technical workflows, and structured task execution.",
     method: "Customized the interface, connection workflow, task procedures, local tooling, and documentation around an existing agent framework. The work focuses on orchestration and reproducible human-in-the-loop workflows, not on model fine-tuning.",
     results: "Ongoing works",
-    artifacts: "Architecture notes, implementation documentation, and reproducible workflow examples will be provided when the project is ready for public release.",
+    artifacts: "Architecture notes, implementation documentation, and reproducible workflow examples will be provided when the project will be ready for public release.",
     status: "Personal software prototype",
     technologies: ["Agentic AI", "Workflow Orchestration", "Local Tools", "Documentation", "Open-source Adaptation"],
     github: "",
@@ -215,11 +215,11 @@ export const skillGroups = [
 ];
 
 export const fitAreas = [
-  "Machine learning for physical sciences",
-  "Simulation-based and data-driven inference",
-  "Particle physics or cosmology analysis groups",
-  "Scientific computing and reproducible research",
-  "Physically grounded representation learning"
+  "World models and learned environment dynamics",
+  "Multimodal state estimation and temporal modelling",
+  "Long-horizon prediction, memory, and planning",
+  "Physics-grounded and simulation-rich learning",
+  "Agentic AI for scientific exploration"
 ];
 
 export const cvHighlights = [
