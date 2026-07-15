@@ -83,14 +83,51 @@ export const renderSkillGroup = ({ title, items }) => `
   </article>
 `;
 
-export const renderWriting = ({ type, title, body, href, linkLabel }) => `
-  <article class="report-card writing-card">
-    <span class="card__meta">${escapeHtml(type)}</span>
-    <h3>${escapeHtml(title)}</h3>
-    <p>${escapeHtml(body)}</p>
-    ${href ? `<div class="writing-card__link">${resourceLink(href, linkLabel, linkLabel)}</div>` : ""}
-  </article>
-`;
+export const renderWriting = ({
+  type,
+  title,
+  body,
+  href,
+  linkLabel,
+  links = [],
+}) => {
+  /*
+   * Backward compatibility:
+   * existing entries using href/linkLabel continue to work.
+   */
+  const resourceLinks = links.length
+    ? links
+    : href
+      ? [{ href, label: linkLabel }]
+      : [];
+
+  const renderedLinks = resourceLinks
+    .filter(({ href }) => Boolean(href))
+    .map(
+      ({ href, label }) => `
+        <li>
+          ${resourceLink(href, label, label)}
+        </li>
+      `,
+    )
+    .join("");
+
+  return `
+    <article class="report-card writing-card">
+      <span class="card__meta">${escapeHtml(type)}</span>
+      <h3>${escapeHtml(title)}</h3>
+      <p>${escapeHtml(body)}</p>
+
+      ${
+        renderedLinks
+          ? `<ul class="link-list writing-card__links">
+              ${renderedLinks}
+            </ul>`
+          : ""
+      }
+    </article>
+  `;
+};
 
 export const renderContactLink = ({ href, label, detail }) => {
   if (!href) return "";
