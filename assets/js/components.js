@@ -57,7 +57,7 @@ export const renderProject = ({ title, area, problem, method, results, artifacts
       </div>
       <div class="project-card__aside">
         <span class="status-label">${escapeHtml(status)}</span>
-        ${links ? `<ul class="link-list">${links}</ul>` : `<p class="artifact-note">Artifact links will be added after public release.</p>`}
+        ${links ? `<ul class="link-list">${links}</ul>` : `<p class="artifact-note">Artifact links will be added after public released.</p>`}
       </div>
     </article>
   `;
