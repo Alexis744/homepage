@@ -20,7 +20,6 @@ export const navigation = [
   ["Projects", "#projects"],
   ["Publications", "#writing"],
   ["Education", "#education"],
-  // ["CV", "#cv"],
   ["Contact", "#contact"]
 ];
 
@@ -148,9 +147,18 @@ export const writing = [
   {
     type: "Research contribution",
     title: "ATLAS analysis correction and revised exclusion limits",
-    body:"Identified a bug in the analysis code that led to the preparation of an erratum and a revision of the published results. The correction improved the exclusion limits by approximately 33% overall and by up to an order of magnitude for specific mass hypotheses.",
-    href: "assets/docs/.pdf",
-    linkLabel: "Erratum"
+    body:
+      "Identified a bug in the analysis code that led to an official correction and revised exclusion limits.",
+    links: [
+      {
+        label: "Original ATLAS paper",
+        href: "assets/docs/MSVertex.pdf.pdf",
+      },
+      {
+        label: "Official erratum",
+        href: "assets/docs/msVtxRun2Errata.pdf",
+      },
+    ],
   },
   {
     type: "Ongoing research contribution",
