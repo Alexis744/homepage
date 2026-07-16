@@ -147,8 +147,9 @@ export const writing = [
   {
     type: "Research contribution",
     title: "ATLAS analysis correction and revised exclusion limits",
-    body:
-      "Identified a bug in the analysis code that led to an official correction and revised exclusion limits.",
+    body: "Identified a cross-section normalization bug that prompted an official erratum. "+
+    "The correction improved the 95% CL upper limits by about 33% for the 0.1, 1, and 10 GeV "+
+    "ALP benchmarks (Figs. 15b and 16a), and strengthened the [mH, mZd] = [125, 5] and [400, 200] GeV dark-photon limits by a factor of 10 (Figs. 18a and 18b).",
     links: [
       {
         label: "Original ATLAS paper",
