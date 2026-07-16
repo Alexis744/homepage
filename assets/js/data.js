@@ -155,7 +155,7 @@ export const writing = [
         href: "assets/docs/MSVertex.pdf",
       },
       {
-        label: "Official erratum",
+        label: "Official erratum (on validation)",
         href: "assets/docs/msVtxRun2Errata.pdf",
       },
     ],
