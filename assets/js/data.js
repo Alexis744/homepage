@@ -99,7 +99,7 @@ export const projects = [
     artifacts: "Research artifact structured for repository or manuscript/report attachment when approved for public release.",
     status: "Research project",
     technologies: ["Python", "Particle Physics", "Machine Learning", "Scientific Computing"],
-    github: "https://github.com/Alexis744/ATLASInternship.git",
+    github: "https://github.com/Alexis744/ATLAS-Machine-Learning-Surrogate-Model.git",
     paper: "assets/docs/ATLAS_internship_report.pdf"
   },
   {
